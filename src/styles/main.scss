@@ -1,3 +1,66 @@
-body {
-    background-color: blue;
+// importando arquivos
+
+@use 'cores';
+
+//criando mixin
+
+@mixin text ($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $corTextoPrimario;
 }
+
+@mixin title ($fontSize: 44px) {
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+
+// iniciando com Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cores.$corDeFundo;
+}
+
+
+// criando as classes dos textos
+
+.text--big {
+    @include text(18px); //include --> pega os parametros do mixin, o 18px muda o minin de 16px para 18px)
+}
+
+.text--medium {
+    @include text();
+}
+
+.text--small {
+    @include text(12px)
+}
+
+//classes para os títulos
+
+.title--big {
+    @include title(48px); //include --> pega os parametros do mixin, o 18px muda o minin de 16px para 18px)
+}
+
+.title--medium {
+    @include title();
+}
+
+.title--small {
+    @include title(44px);
+}
+
+//classes para o link
+
+.link--text {
+    @include text(18px);
+    color: $corTextoSecundario;
+}
+

@@ -15,4 +15,7 @@ Iniciando o projeto:
 
     6. No index, precisamos trazer o arquivo css, para isso usamos o <link>, buscando o arquivo no diretório dist/css
 
-    
+    7. Para trabalhar com imagens precisamos instalat o plugin gulp-imagemin (versão 7.1.0, entã fazemos) -> npm install --save-dev gulp-imagemin@7.1.0
+        7.1 precisamos tambem estruturar isso no gulp
+    8. Criamos arquivos scss dividindo cada estrutura (cores)
+    9. criamos alguns padrões de texto e títulos usando mixin e include.
