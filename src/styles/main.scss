@@ -1,18 +1,19 @@
 // importando arquivos
 
 @use 'cores';
+@use 'heros';
 
 //criando mixin
 
 @mixin text ($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: $corTextoPrimario;
+    color: cores.$corTextoPrimario;
 }
 
 @mixin title ($fontSize: 44px) {
     @include text($fontSize);
-    color: $corTextoSecundario;
+    color: cores.$corTextoSecundario;
 }
 
 
@@ -50,17 +51,18 @@ body {
 }
 
 .title--medium {
-    @include title();
+    @include title(40px);
 }
 
 .title--small {
-    @include title(44px);
+    @include title(28px);
 }
 
 //classes para o link
 
 .link--text {
     @include text(18px);
-    color: $corTextoSecundario;
+    color: cores.$corTextoSecundario;
+    text-decoration: underline;
 }
 

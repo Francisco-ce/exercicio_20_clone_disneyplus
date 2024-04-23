@@ -19,3 +19,4 @@ Iniciando o projeto:
         7.1 precisamos tambem estruturar isso no gulp
     8. Criamos arquivos scss dividindo cada estrutura (cores)
     9. criamos alguns padrões de texto e títulos usando mixin e include.
+    10. Dentro do 'package.json' colocar dentro do script: "dev":"gulp watch", assim rodamos npm run dev para iniciar o watch das mudanças
