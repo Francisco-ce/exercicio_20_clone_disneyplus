@@ -15,8 +15,16 @@ Iniciando o projeto:
 
     6. No index, precisamos trazer o arquivo css, para isso usamos o <link>, buscando o arquivo no diretório dist/css
 
-    7. Para trabalhar com imagens precisamos instalat o plugin gulp-imagemin (versão 7.1.0, entã fazemos) -> npm install --save-dev gulp-imagemin@7.1.0
-        7.1 precisamos tambem estruturar isso no gulp
+    7. Para trabalhar com imagens precisamos instalar o plugin gulp-imagemin (versão 7.1.0, entã fazemos) -> npm install --save-dev gulp-imagemin@7.1.0
+
+        a. precisamos tambem estruturar isso no gulp
+        b. pode ser que o gulpesteja em uma versão errada, por isso verifique se a versão do gulp é 4.0.2
+
+
     8. Criamos arquivos scss dividindo cada estrutura (cores)
     9. criamos alguns padrões de texto e títulos usando mixin e include.
     10. Dentro do 'package.json' colocar dentro do script: "dev":"gulp watch", assim rodamos npm run dev para iniciar o watch das mudanças
+
+
+
+    //** para pegar todas as pastas e * para pegar todos os arquivos//

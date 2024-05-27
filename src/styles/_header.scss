@@ -1,0 +1,33 @@
+@use 'cores';
+
+.header {
+    position: sticky;
+    top:0;
+    left:0;
+    background-color: black;
+
+    &__links {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        padding: 60px 20px 60px 20px;
+        font-size: 36px;
+        list-style: none;
+    }
+
+}
+
+.button_link {
+    text-decoration: none;
+    color: cores.$corTextoSecundario;
+    letter-spacing: 8px;
+
+    &:hover {
+        color: cores.$corTextoPrimario;
+    }
+}
+
+.button_center {
+    padding-right: 100px;
+    padding-left: 100px;
+}

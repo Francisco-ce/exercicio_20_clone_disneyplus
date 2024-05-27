@@ -1,0 +1,17 @@
+@use 'cores';
+
+.filme {
+    padding: 0px 400px 0px 400px;
+
+    &__text {
+        color: cores.$corTextoPrimario;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        padding-bottom: 16px;
+        color: cores.$corTextoTitulo;
+    }
+}

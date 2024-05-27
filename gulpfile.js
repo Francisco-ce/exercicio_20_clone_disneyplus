@@ -1,20 +1,20 @@
-const gulp = require('gulp')
-const sass = require('gulp-sass')(require('sass')) 
-const imagemin = require('gulp-imagemin')
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const imagemin = require('gulp-imagemin');
 
 function styles() {
     return gulp.src('./src/styles/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./dist/css'));
 }
 
-function image() {
-    return gulp.src('./src/images/**/*') //** para pegar todas as pastas e * para pegar todos os arquivos/
+function images() {
+    return gulp.src('./src/images/**/*') 
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel(styles, image)
+exports.default = gulp.parallel(styles, images)
 
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
