@@ -1,9 +1,13 @@
 @use 'cores';
 
 .filme {
-    padding: 5.6vw;
-    // padding: 0px 400px 0px 400px;
 
+    &__title {
+        font-size: 48px;
+        padding-bottom: 16px;
+        color: cores.$corTextoTitulo;
+        text-align: center;
+    }
     &__text {
         color: cores.$corTextoPrimario;
         letter-spacing: 4px;
@@ -11,11 +15,4 @@
         padding-right: 250px;
         padding-left: 250px;
     }
-
-    &__title {
-        font-size: 48px;
-        padding-bottom: 16px;
-        color: cores.$corTextoTitulo;
-    }
-
 }

@@ -1,0 +1,19 @@
+@use 'cores';
+
+.producao {
+    padding: 5.6vw;
+    display: flex;
+    justify-content:center;
+
+    img {
+        border-radius: 15px;
+        height: 400px;
+        padding-left: 200px;
+    }
+    h1 {
+        color: cores.$corTextoPrimario;
+        text-align: center;
+        padding: 20px 200px 20px 100px;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,40 @@
+@use 'cores';
+
+.shows {
+    
+    min-height: 80vh;
+    
+    &__tabs {
+        position: sticky;
+        top:0;
+        left:0;
+        border-bottom: 1px white solid;
+        display: flex;
+        justify-content: center;
+        padding: 2vw;
+        background-color: black;
+
+        &__button {
+            color: cores.$corTextoSecundario;
+            font-size: 40px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+        }
+    }
+
+    &__list {
+        padding: 5.6vw;
+        display: none;
+
+        &--is--active {
+            padding: 5.6vw;
+            display: block;
+        }
+    }
+    
+}

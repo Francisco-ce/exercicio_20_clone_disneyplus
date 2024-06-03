@@ -3,22 +3,10 @@
 @use 'cores';
 @use 'hero';
 @use 'header';
-@use 'filme';
 @use 'elenco';
-
-//criando mixin
-
-@mixin text ($fontSize: 16px) {
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-    color: cores.$corTextoPrimario;
-}
-
-@mixin title ($fontSize: 44px) {
-    @include text($fontSize);
-    color: cores.$corTextoSecundario;
-}
-
+@use 'shows';
+@use 'filme';
+@use 'producao';
 
 // iniciando com Reset
 
@@ -30,42 +18,5 @@
 
 body {
     background-color: cores.$corDeFundo;
-}
-
-
-// criando as classes dos textos
-
-.text--big {
-    @include text(18px); //include --> pega os parametros do mixin, o 18px muda o minin de 16px para 18px)
-}
-
-.text--medium {
-    @include text();
-}
-
-.text--small {
-    @include text(12px)
-}
-
-//classes para os títulos
-
-.title--big {
-    @include title(48px); //include --> pega os parametros do mixin, o 18px muda o minin de 16px para 18px)
-}
-
-.title--medium {
-    @include title(40px);
-}
-
-.title--small {
-    @include title(28px);
-}
-
-//classes para o link
-
-.link--text {
-    @include text(18px);
-    color: cores.$corTextoSecundario;
-    text-decoration: underline;
 }
 
